@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paso 1: Datos del Recluso</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #e9ecef;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .main-container {
+            border: 1px solid #ccc;
+            background-color: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        .form-box {
+            width: 450px;
+            background-color: #ffffff;
+            padding: 30px;
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 25px;
+            color: #343a40;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        label {
+            display: block;
+            margin-bottom: 8px;
+            color: #006400; /* Green text like in the example */
+            font-weight: 600;
+        }
+        input, select {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 20px;
+            border: 1px solid #ced4da;
+            border-radius: 5px;
+            box-sizing: border-box;
+            background-color: #f8f9fa;
+        }
+        button {
+            width: 100%;
+            padding: 12px;
+            background-color: #343a40;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s;
+        }
+        button:hover {
+            background-color: #23272b;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="main-container">
+        <div class="form-box">
+            <div class="header">PPCDP - Nuevo Recluso</div>
+            <form>
+                <label for="nombre">Nombre del Recluso</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Nombre completo">
+
+                <label for="escolaridad">Escolaridad</label>
+                <select id="escolaridad" name="escolaridad">
+                    <option value="">Seleccione un nivel</option>
+                    <option value="primaria">Primaria</option>
+                    <option value="secundaria">Secundaria</option>
+                    <option value="preparatoria">Preparatoria</option>
+                    <option value="licenciatura">Licenciatura</option>
+                </select>
+
+                <label for="delito">Nombre del Delito</label>
+                <input type="text" id="delito" name="delito" placeholder="Ej. Robo agravado">
+
+                <label for="grupo_delito">Grupo del Delito</label>
+                <select id="grupo_delito" name="grupo_delito">
+                    <option value="">Seleccione un grupo</option>
+                    <option value="salud">Delitos contra la salud</option>
+                    <option value="administrativos">Administrativos</option>
+                    <option value="patrimoniales">Patrimoniales</option>
+                </select>
+
+                <button type="button">Siguiente Paso</button>
+            </form>
+        </div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paso 3: Sentencia y Confirmar</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #e9ecef;
+            margin: 0;
+            color: #333;
+        }
+        .navbar {
+            background-color: #f8f9fa;
+            border-bottom: 1px solid #dee2e6;
+            padding: 10px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .navbar .logo-placeholder {
+            border: 2px solid #6c757d;
+            width: 30px;
+            height: 30px;
+            text-align: center;
+            line-height: 30px;
+            color: #6c757d;
+        }
+        .nav-items a {
+            margin: 0 12px;
+            text-decoration: none;
+            color: #495057;
+            font-weight: 500;
+        }
+        .nav-items a i {
+            margin-right: 5px;
+        }
+        .user-menu {
+            position: relative;
+        }
+        .main-content {
+            display: flex;
+            justify-content: center;
+            padding-top: 50px;
+        }
+        .form-box {
+            width: 450px;
+            background-color: #ffffff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 25px;
+            color: #343a40;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        label {
+            display: block;
+            margin-bottom: 8px;
+            color: #006400;
+            font-weight: 600;
+        }
+        input {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 20px;
+            border: 1px solid #ced4da;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+        .resumen {
+            background-color: #f8f9fa;
+            border: 1px solid #dee2e6;
+            padding: 15px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+        }
+        .resumen h3 { margin-top: 0; }
+        .resumen p { margin: 8px 0; }
+        .buttons {
+            display: flex;
+            justify-content: space-between;
+        }
+        button {
+            width: 48%;
+            padding: 12px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .guardar {
+            background-color: #28a745;
+            color: white;
+        }
+        .anterior {
+            background-color: #6c757d;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="navbar">
+        <div style="display: flex; align-items: center;">
+            <div class="logo-placeholder">X</div>
+            <span style="margin-left: 10px; font-weight: bold;">PPCDP</span>
+            <nav class="nav-items" style="margin-left: 30px;">
+                <a href="#"><i class="fas fa-book"></i>Cursos</a>
+                <a href="#"><i class="fas fa-users"></i>Grupos</a>
+                <a href="#"><i class="fas fa-lightbulb"></i>Propuestas</a>
+                <a href="#"><i class="fas fa-chart-bar"></i>Reportes</a>
+                <a href="#"><i class="fas fa-user-friends"></i>Usuarios</a>
+            </nav>
+        </div>
+        <div class="user-menu">
+            <a href="#"><i class="fas fa-user-circle"></i> Nombre Apellido <i class="fas fa-caret-down"></i></a>
+        </div>
+    </div>
+
+    <div class="main-content">
+        <div class="form-box">
+            <div class="header">Detalles de la Sentencia</div>
+            <form>
+                <label for="pena">Pena (días)</label>
+                <input type="number" id="pena" name="pena" placeholder="Número de días">
+
+                <div class="resumen">
+                    <h3>Confirmar Datos del Registro</h3>
+                    <p><strong>Recluso:</strong> Juan Pérez López</p>
+                    <p><strong>Delito:</strong> Robo agravado</p>
+                    <p><strong>Juez:</strong> Ana María García</p>
+                    <p><strong>Experiencia Juez:</strong> 15 años</p>
+                </div>
+                
+                <div class="buttons">
+                    <button type="button" class="anterior">Anterior</button>
+                    <button type="button" class="guardar">Guardar Registro</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+</body>
+</html>
