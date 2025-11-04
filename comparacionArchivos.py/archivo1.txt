@@ -1,0 +1,6 @@
+Hola, este es el primer archivo.
+Se utiliza para la comparación de la tarea.
+Esta línea es idéntica en ambos.
+Esta línea será diferente.
+Línea extra que solo existe en el archivo 1.
+Fin del archivo uno.
